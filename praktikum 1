@@ -1,0 +1,41 @@
+# -*- coding: utf-8 -*-
+"""
+judul: praktikum 1
+hari/tanggal: 20210920
+NIM: 065002100014
+author: nyeto leo
+"""
+print("ini nyeto")
+
+v = input("masukan namamu: ")
+
+print("nama kamu adalah", v)
+
+x = input("dimana asal sekolah sma kamu?: ")
+
+print("asal sekolah sma kamu", x)
+
+o = input("dimana alamat tempat tinggal kamu?: ")
+
+print("kamu tinggal di", o)
+
+print("sampai jumpa")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
