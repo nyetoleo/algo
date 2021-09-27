@@ -1,0 +1,32 @@
+"""
+judul : praktikum 2 latihan 1, algo 
+nama : nyeto leo t
+hari/tanggal : senin, september 2021
+NIM : 065002100014
+"""
+import math 
+
+A = float (input("masukan nilai a: ", ))
+B = float (input("masukan nilai b: ", ))
+
+print("hasil penjumlahannya:", A+B)
+print("selisihnya adalah:", A-B)
+print("hasil perkaliannya adalah :", A*B)
+print("hasil sisa baginya:", A%B)
+print("hasil log(A) adalah", math.log10(A))
+print("hasil a pangkat b:", A**B)
+print("hasil pembagian nilai a dan b adalah:", A/B)
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
