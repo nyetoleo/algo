@@ -1,0 +1,17 @@
+"""
+judul: latihan2, praktikum1, algo pemrograman
+hari/tanggal: 25 september 2021
+nama: nyeto leo t
+NIM: 065002100014
+"""
+print("hitunglah luas ruangan")
+
+
+p = float (input("masukan panjang rungan:", ))
+l = float (input("masukan lebar rungan:", ))
+
+L =p*l
+
+o = input("masukan satuan (meter/inci):", )
+
+print("luas ruangan adalah", L,o)
