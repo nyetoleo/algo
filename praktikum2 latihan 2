@@ -1,0 +1,32 @@
+"""
+judul: praktikum 2 latihan 2 algo pemrograman
+tanggal: 3 agustus 2021
+nama: nyeto leo t
+NIM: 065002100014
+"""
+import math
+ 
+
+
+lat1 = float(input("masukan lattitude kota pertama:" ,))
+lon1 = float(input("masukan longitude kota pertama:" ,))
+lat2 = float(input("masukan lattitude kota kedua:" ,))
+lon2 = float(input("masukan longitude kota kedua:" ,))
+
+#haversine formula 
+dlon = lon2 - lon1
+dlat = lat2 - lat1
+
+a = math.sin(dlat/2)**2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon/2)**2
+c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+R = 6371
+
+jarak = R * c
+
+print("jarak antara 2 titik kota adalah" ,jarak,"km" )
+
+
+
+
+
+
