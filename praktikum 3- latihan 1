@@ -1,0 +1,30 @@
+"""
+judul : praktikum 3 latihan 1 algo pemrograman 
+tanggal : 04 oktober 2021
+nama : nyeto leo t
+NIM : 065002100014
+"""
+
+
+sa = int(input("masukan panjang sisi A:" ,))
+sb = int(input("masukan panjang sisi B:" ,))
+sc = int(input("masukan panjang sisi C:" ,))
+
+x=(sc)**2
+y=(sa)**2+(sb)**2
+
+if sa==sb==sc:
+    print("segitiga sama sisi")
+elif ((sa + sb <= sc) or (sa +sc <= sb) or (sb + sc <= sa)):
+    print("bukan termasuk segitiga")
+elif sa==sb or sb==sc or sa==sc:
+    print("segitiga sama kaki")
+elif x==y:
+    print("segitiga siku siku")
+else:
+    print("segitiga sembarang")
+    
+
+    
+    
+    
