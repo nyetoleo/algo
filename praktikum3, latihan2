@@ -1,0 +1,31 @@
+"""
+judul : praktikum 3 latihan 2, algo pemrograman
+tanggal : 10 oktober 2021
+nama : nyeto leo tosuli
+NIM : 065002100014
+"""
+import cmath 
+
+a = float(input("nilai A:" ,))
+b = float(input("nilai B:" ,))
+c = float(input("nilai C:" ,))
+
+if a==0:
+    print("bukan merupakan persamaan kuadrat")
+else :
+    D = (b**2) - (4*a*c)
+    if D>0:
+        x1 = (-b+cmath.sqrt(D))/(2*a)
+        x2 = (-b-cmath.sqrt(D))/(2*a)
+        print("jenis akarnya adalah berbeda")
+    elif D==0 :
+        x1 = (-b/(2*a))
+        x2 = (-b/(2*a))
+        print("jenis akarnya kembar")
+    else :
+        x1 = (-b+cmath.sqrt(D))/(2*a)
+        x2 = (-b-cmath.sqrt(D))/(2*a)
+        print("jenis akarnya imajiner")
+print("x1 adalah"+str(x1))
+print("x2 adalah"+str(x2))
+print("dengan diskriminan:", D)
