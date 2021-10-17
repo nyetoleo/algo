@@ -1,0 +1,37 @@
+"""
+judul : praktikum 4 latihan 2 algo pemrograman
+nama : nnyeto leo t
+hari tanggal : 18 oktober 2021
+NIM : 065002100014
+"""
+
+a = True
+
+while (a==True):
+    month = int(input("Enter The Month Please (1-12): "))
+    year = int(input('Enter The Year Please: '))
+    
+    if (month == -1):
+        a = False
+        print ("terimakasih telah menggunakan program saya:)")
+        
+    elif (month >= 13 or month == 0 or month <= -2):
+        print ("Invalid Value Entered")
+        
+    elif (month == 2):
+        if (year % 4 == 0 and month == 2):
+            print ("There Are 29 Days In The Month In",year)
+        else:
+            print ("There Are 28 Days In The Month In",year)
+            
+    elif (month == 1 or month == 3 or month == 5 or month == 7 or month == 8 
+          or month == 10 or month == 12):
+        print ("There Are 31 Days In The Month In",year)
+        
+    else:
+        print ("There Are 30 Days In The Month In",year)
+        
+    a = input ("Enter -1 To Stop This Program: ")
+    if a=="-1":
+        print ("terimakasih telah menggunakan program saya")
+        break;
