@@ -1,0 +1,43 @@
+'''
+judul : praktikum 5 latihan 2 algo pemrograman
+hari tanggal : 24 oktober 2021
+nama  : nyeto leo t
+NIM : 065002100014
+'''
+
+n = '0'
+
+runningTotal = 0
+
+
+while (n != ''):
+    variable = int(input("masukkan umur :"))
+
+    if (variable == 0):
+        break ;
+
+    elif (variable <=2):
+        print ("gratis")
+        runningTotal +=0
+        print ("total harga tiket :", runningTotal)
+
+    elif (variable >= 3) and (variable <=12):
+        print ("harga tiket = 14.00")
+        runningTotal += 14.00
+        print ("total harga tiket", runningTotal)
+
+    elif (variable >= 65):
+        print ("harga tiket = 18.00")
+        runningTotal += 18.00
+        print ("total harga tiket", runningTotal)
+
+    else :
+        print ("harga tiket = 23.00")
+        runningTotal += 23.00
+        print ("total harga tiket", runningTotal)
+
+pay = float(input("masukkan jumlah uang berapa :"))
+if (pay < runningTotal):
+     print ("mohon maaf uang anda kurang, total harga: ", runningTotal)
+elif (pay >= runningTotal):
+    print ("kembalian", pay-runningTotal, ) 
