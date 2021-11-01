@@ -1,0 +1,47 @@
+'''
+judul : praktikum 7, latihan 1 algo pemrograman
+hari/tanggal : senin 1 november 2021
+nama : nyeto leo t
+NIM : 065002100014
+'''
+def program(nilai='0',total=0,tampung=0):
+    while(nilai!=0):
+       inputnilai= str(input('masukan nilai:' ))
+       tampung=tampung+1
+       if(inputnilai==''):
+          return total/(tampung-1)
+       elif inputnilai == 'A':
+          print('nilai = 4')
+          total+=4
+       elif inputnilai == 'A-':
+           print('nilai = 3.75')
+           total+=3.75
+       elif inputnilai == 'B+':
+           print('nilai = 3.50')
+           total+=3.50
+       elif inputnilai == 'B':
+           print('niali = 3.00')
+           total+=3.00
+       elif inputnilai == 'B-':
+           print('nilai = 2.75')
+           total+=2.75
+       elif inputnilai == 'C+':
+           print('nilai = 2.50')
+           total+=2.50
+       elif inputnilai == 'C':
+           print('nilai = 2.00')
+           total+=2.00
+       elif inputnilai == 'C-':
+           print('nilai = 1.75')
+           total+=1.75
+       elif inputnilai == 'D':
+           print('nilai = 1.50')
+           total+=1.50
+       elif inputnilai == 'E':
+           print('nilai = 1.25')
+           total+=1.25
+       else:
+           print('masukkan nilai yang benar')
+rata2=program()
+print('rata ratanya adalah', rata2)       
+      
