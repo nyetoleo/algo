@@ -1,3 +1,9 @@
+'''
+judul: praktikum 7, latihan 2 algo pemrograman
+hari tanggal: minggu 7 november 2021
+nama: nyeto leo t
+NIM: 065002100014
+'''
 def variable (x = 0, y= 0, z = 0):
     while  (x>-3) :
         x+=x 
@@ -26,4 +32,3 @@ def variable (x = 0, y= 0, z = 0):
 
 variable ()  
 print ("program stop")
-
