@@ -1,0 +1,21 @@
+'''
+judul: praktikum 9 latihan 1 algo pemrograman
+hari/tanggal: 15 november 2021
+nama: nyeto leo T
+NIM: 065002100014
+'''
+def jumlah (a = 0, jml = 0 ,i = 1):
+   if (jml <=0):
+       hasil =0
+       return hasil
+   else :
+         x = int(input("masukkan bilangan ke " + str(i) + ":"))
+         if (jml ==1):
+             return x
+         else :
+             i+=1
+             hasil = x + jumlah (x, jml-1, i)
+             return hasil
+avg = int(input('masukkan jumlah bilangan:'))
+nilai = jumlah (jml=avg)
+print ("hasilnya adalah :"+ str(nilai)) 
