@@ -1,0 +1,39 @@
+'''
+judul: praktikum 9 latihan 2 algo pemrograman
+nama: nyeto leo t
+hari tanggal: minggu 21 november 2021
+NIM: 065002100014
+'''
+def sqrt(bilangan,angka) :
+    if bilangan == 1:
+        return 1 
+    elif bilangan == 0:
+        return 0
+    else :
+        if bilangan == 1:
+            return bilangan
+        elif angka == 0:
+            return 1
+        elif bilangan> 1 :
+            return bilangan * sqrt(bilangan,angka-1)
+        elif angka < 0 :
+            return 1/bilangan * sqrt(bilangan,angka-1)
+        else :
+            print("data invalid")
+def memasukkan(x=0,y=0):
+    x=int(input("masukan angka:"))
+    y=int(input('masukan pangkat:'))
+    hasil = sqrt(bilangan = x,angka = y)
+    print("hasil dari ",x,"pangkat",y,"adalah :",hasil)
+    end()
+
+def end():
+    a=input("ketik enter jika mau program stop:" "ketik lanjut jika ingin melanjutkan:")
+    if a == "enter":
+        print("program stop")
+    elif a == "lanjut" :
+        memasukkan ()
+    else :
+        print("masukkan opsi dengan benar")
+        end()
+memasukkan()
