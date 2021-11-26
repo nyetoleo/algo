@@ -1,0 +1,29 @@
+'''
+nama: nyeto leo t
+judul:praktikum 10 latihan 1
+hari tanggal: jumat 26 november 2021
+NIM: 065002100014
+'''
+
+def inputan (biodata):
+    file = open ('Biodata.txt','w')
+    file.write(biodata)
+    file.close()
+    
+def baca ():
+    file = open ('Biodata.txt', 'r')
+    text = file.read()
+    print(text)
+    file.close
+    
+nama = input ('Masukkan Nama: ')
+usia = input ('Masukkan Usia: ')
+alamat = input ('Masukkan Alamat: ')
+email = input ('Masukkan Alamat Email: ')
+pengajar = input ('Masukkan Dosen Walimu: ')
+biodata = 'Nama: {}\nUsia: {}\nAlamat: {}\nEmail: {}\nPengajar: {}'.format(nama,usia,alamat,email,pengajar)
+print('')
+print('Biodata Anda Adalah')
+print('===================')
+inputan(biodata)
+baca()
