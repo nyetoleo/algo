@@ -1,0 +1,24 @@
+'''
+nama: nyeto leo t
+judul: praktikum 12 latihan 1
+hari, tanggal: senin 6 desember 2021
+NIM: 065002100014
+'''
+class mahasiswa:
+    
+    def __init__(self,nama, angkatan, nim):
+        self.nama=nama
+        self.angkatan=angkatan
+        self.nim=nim
+        
+    def biodatamahasiswa(self):
+        print('\nNama: ', self.nama, '\nNim :', self.nim, '\nAngkatan :', self.angkatan )
+
+nama =input('masukkan nama:')
+nomor=int(input('masukkan nim:'))
+tahun=int(input('masukkan tahun angkatan:'))
+maha1=mahasiswa(nama,tahun,nomor)
+maha1.biodatamahasiswa()
+
+        
+        
