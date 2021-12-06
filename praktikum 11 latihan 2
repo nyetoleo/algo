@@ -1,0 +1,47 @@
+'''
+nama: nyeto leo t
+judul: praktikum 11 latihan 2
+hari,tanggal: senin 6 Desember 2021
+NIM: 065002100014
+'''
+class x:
+	
+
+	def __init__(self, posisi):
+		self.posisi = posisi
+		self.length = len(posisi)
+
+	def __str__(self):
+		return " ".join([str(x)
+						for x in self.posisi])
+
+	def fungsirekursif(self, n=None):
+		if n is None:
+			n = self.length
+
+		
+		if n == 1:
+			return
+
+		
+		for c in range(n - 1):
+			if self.posisi[c] > self.posisi[c + 1]:
+				self.posisi[c], self.posisi[c +
+				1] = self.posisi[c + 1], self.posisi[c]
+
+		
+		self.fungsirekursif(n - 1)
+
+
+def utama():
+	posisi = [3,-2,9,8,5,4,1]
+	
+	
+	ios =x(posisi)
+	
+	ios.fungsirekursif()
+	print("list yang telah disorting :\n", ios)
+
+
+if __name__ == "__main__":
+	utama()
