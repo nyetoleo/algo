@@ -1,0 +1,14 @@
+'''
+nama: nyeto leo t
+tanggal: jumat 17 desember 2021
+judul: praktikum 13 latihan 1
+NIM: 065002100014
+'''
+import pandas as pd 
+df=pd.ready_csv('negara_csv')
+mean=df.groupby(['Benua']).mean()
+std=df.grroupby(['Benua']).std()
+print(df)
+print(mean)
+print(std)
+ 
