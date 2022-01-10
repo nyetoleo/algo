@@ -1,0 +1,24 @@
+'''
+nama: nyeto leo t
+tanggal: 10 januari 2022
+judul: praktikum 13 latihan 2
+NIM: 065002100014
+'''
+import pandas as pd
+
+df = pd.read_csv("Negara.csv")
+mean = df.groupby(["Benua"]).mean ()
+std = df.groupby(["Benua"]).std()
+print (df)
+
+x = open ("negararerata.csv","w")
+x.write ("Berikut ini adalah reratanya\n")
+x.write (str(mean))
+x.close()
+print (mean)
+
+a = open("NegaraSTD.csv","w")
+a.write ("Berikut ini adalah STDnya\n")
+a.write (str(std))
+a.close ()
+print (std)
